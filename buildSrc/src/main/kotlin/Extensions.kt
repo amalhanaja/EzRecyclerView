@@ -12,6 +12,9 @@ val Project.compileSdk: Int
 val Project.groupId: String
     get() = stringProperty("GROUP")
 
+val Project.versionName: String
+    get() = stringProperty("VERSION_NAME")
+
 private fun Project.intProperty(name: String): Int {
     return (property(name) as String).toInt()
 }
